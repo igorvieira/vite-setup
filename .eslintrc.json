@@ -41,7 +41,8 @@
         "groups": [
           "module",
           [
-            "/^components/"
+            "/^components/",
+            "/^types/"
             // tu pode colocar todos os seus folders aqui
           ],
           "/styles.*/",
