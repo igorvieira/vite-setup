@@ -1,13 +1,12 @@
+import Content from "./components/Content";
 import { Counter } from "./components/Counter";
 
 function App() {
   return (
-    <div>
+    <Content>
       <h1>Vite + React</h1>
-      <div>
-        <Counter />
-      </div>
-    </div>
+      <Counter />
+    </Content>
   );
 }
 
