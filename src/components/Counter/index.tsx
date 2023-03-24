@@ -4,12 +4,12 @@ import * as S from "./styles";
 
 export const Counter = () => {
   const [count, setCount] = useState(0);
+  const handleCount = () => setCount((count) => count + 1);
 
   return (
     <div>
-      <S.Button onClick={() => setCount((count) => count + 1)}>
-        count is: {count}
-      </S.Button>
+      <S.Counter data-testid="counter-view">{count}</S.Counter>
+      <S.Button onClick={handleCount}>Click me!</S.Button>
     </div>
   );
 };

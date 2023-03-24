@@ -17,9 +17,14 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "*": ["./src/*"]
     }
   },
-  "include": ["src"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "./.eslintrc.*",
+    "./vite.config.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

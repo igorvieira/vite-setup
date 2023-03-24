@@ -9,3 +9,7 @@ export const Button = styled.button`
   border-radius: 0.5rem;
   cursor: pointer;
 `;
+
+export const Counter = styled.div`
+  font-size: 2rem;
+`;

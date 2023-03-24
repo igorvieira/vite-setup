@@ -1,28 +1,40 @@
-import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import path from "path";
+import { defineConfig } from "vite";
 
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 3000,
-  },
-  preview: {
-    port: 3000,
-  },
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
+// https://vitejs.dev/config/
+export default defineConfig(() => {
+  return {
+    plugins: [react()],
+    server: {
+      port: 3000,
     },
-  },
-  define: {
-    "process.env": process.env,
-    global: "window",
-  },
-  build: {
-    commonjsOptions: { include: [] },
-  },
-  optimizeDeps: {
-    disabled: false,
-  },
+    preview: {
+      port: 3000,
+    },
+    resolve: {
+      alias: {
+        components: `${__dirname}/src/components/`,
+        styles: `${__dirname}/src/styles/`,
+        types: `${__dirname}/src/types/`,
+        utils: `${__dirname}/src/utils/`,
+      },
+    },
+    define: {
+      "process.env": process.env,
+      global: "window",
+    },
+    build: {
+      commonjsOptions: { include: [] },
+    },
+    optimizeDeps: {
+      disabled: false,
+    },
+    test: {
+      globals: true,
+      environment: "jsdom",
+      setupFiles: "./vitest.setup.ts",
+      include: ["src/**/*.test.{ts,tsx}"],
+      exclude: ["**/node_modules/**", "**/dist/**", "e2e/**"],
+    },
+  };
 });
