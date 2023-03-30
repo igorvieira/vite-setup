@@ -1,4 +1,3 @@
-const path = require('path')
 const { mergeConfig } = require('vite')
 
 module.exports = {
@@ -19,7 +18,9 @@ module.exports = {
     return mergeConfig(config, {
       resolve: {
         alias: {
-          '@': path.resolve(__dirname, '../src')
+          components: `/src/components/`,
+          styles: `/src/styles/`,
+          types: `/src/types/`
         }
       }
     })
