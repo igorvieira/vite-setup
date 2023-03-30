@@ -1,6 +1,5 @@
-# Repository or organization name
-
-> Description
+# Vite Setup
+> Eslint (+Prettier), Storybook, Styled-components, Jest e Playwright
 
 ## Build Setup
 
