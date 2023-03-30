@@ -20,7 +20,8 @@ module.exports = {
         alias: {
           components: `/src/components/`,
           styles: `/src/styles/`,
-          types: `/src/types/`
+          types: `/src/types/`,
+          utils: `/src/utils/`
         }
       }
     })
