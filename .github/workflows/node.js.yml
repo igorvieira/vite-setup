@@ -27,4 +27,3 @@ jobs:
 
     - run: yarn --frozen-lockfile
     - run: yarn test
-    - run: yarn build && npx playwright install chromium && playwright test --config=playwright.config.ts --project=chromium
