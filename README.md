@@ -1,6 +1,8 @@
 # Vite Setup
 > Eslint (+Prettier), Storybook, Styled-components, Jest e Playwright
 
+[![vite-setup](https://github.com/igorvieira/vite-setup/actions/workflows/node.js.yml/badge.svg)](https://github.com/igorvieira/vite-setup/actions/workflows/node.js.yml)
+
 ## Build Setup
 
 ```bash
