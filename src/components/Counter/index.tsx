@@ -7,7 +7,9 @@ export const Counter = () => {
 
   return (
     <div>
-      <h1 data-testid="counter-view">Count: {count}</h1>
+      <h1>
+        Count: <span data-testid="counter-view">{count}</span>
+      </h1>
       <S.Button onClick={() => setCount(count + 1)}>Increment</S.Button>
     </div>
   )

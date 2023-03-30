@@ -12,13 +12,13 @@ describe('Counter', () => {
     const counter = screen.getByTestId('counter-view')
     const button = screen.getByRole('button', { name: /increment/i })
 
-    expect(counter).toHaveTextContent('Count: 0')
+    expect(counter).toHaveTextContent('0')
 
     act(() => {
       button.dispatchEvent(new MouseEvent('click', { bubbles: true }))
     })
 
-    expect(counter).toHaveTextContent('Count: 1')
+    expect(counter).toHaveTextContent('1')
 
     screen.logTestingPlaygroundURL()
   })
