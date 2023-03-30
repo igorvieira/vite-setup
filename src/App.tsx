@@ -1,5 +1,7 @@
+import { Counter } from 'components/Counter'
+
 function App() {
-  return <>Hey!</>;
+  return <Counter />
 }
 
-export default App;
+export default App
