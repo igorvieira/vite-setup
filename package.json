@@ -2,6 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
+  "typpe": "module",
   "scripts": {
     "dev": "vite",
     "lint": "eslint src --max-warnings=0",
